@@ -118,7 +118,7 @@ const Nav = () => {
       display: "flex", justifyContent: "space-between", alignItems: "center",
     }}>
       <a href="#top" onClick={(e) => go(e, "#top")} style={{
-        fontFamily: "'Kalam', cursive",
+        fontFamily: "'Caveat', cursive",
         fontSize: 32,
         color: "#2A1E3D",
         textDecoration: "none",
@@ -132,7 +132,7 @@ const Nav = () => {
             textDecoration: "none",
             fontFamily: "'Cormorant Garamond', serif",
             fontSize: 17,
-            fontWeight: 700,
+            fontWeight: 500,
             letterSpacing: "0.02em",
           }}>{l}</a>
         ))}
@@ -223,12 +223,12 @@ const Hero = () => {
           </div>
 
           <h1 style={{
-            fontFamily: "'Kalam', cursive",
+            fontFamily: "'Caveat', cursive",
             fontSize: "clamp(64px, 9vw, 132px)",
             lineHeight: 0.95,
             color: "#2A1E3D",
             margin: 0,
-            fontWeight: 700,
+            fontWeight: 500,
           }}>
             Un pezzo di<br/>
             <span style={{ color: "#7A6391", fontStyle: "italic" }}>montagna</span><br/>
@@ -341,10 +341,10 @@ const Claim = () => {
                 color: "#E8B8C4", letterSpacing: "0.2em", marginBottom: 20,
               }}>— {c.num}</div>
               <h3 style={{
-                fontFamily: "'Kalam', cursive",
+                fontFamily: "'Caveat', cursive",
                 fontSize: "clamp(40px, 4.5vw, 64px)",
                 margin: 0,
-                color: "#E8B8C4", lineHeight: 1, fontWeight: 700,
+                color: "#E8B8C4", lineHeight: 1, fontWeight: 500,
                 overflowWrap: "break-word", hyphens: "auto",
               }}>{c.titolo}</h3>
               <p style={{
@@ -398,8 +398,8 @@ const ChiSiamo = () => {
           }}>◇ Chi siamo</div>
 
           <h2 style={{
-            fontFamily: "'Kalam', cursive", fontSize: "clamp(54px, 6vw, 88px)",
-            color: "#2A1E3D", margin: 0, lineHeight: 0.95, fontWeight: 700,
+            fontFamily: "'Caveat', cursive", fontSize: "clamp(54px, 6vw, 88px)",
+            color: "#2A1E3D", margin: 0, lineHeight: 0.95, fontWeight: 500,
           }}>
             Ciao, sono <span style={{ color: "#7A6391", fontStyle: "italic" }}>Samuele</span>.
           </h2>
@@ -416,7 +416,7 @@ const ChiSiamo = () => {
               ad amare ogni giorno.
             </p>
             <p style={{ margin: 0 }}>
-              Qui, insieme a <span style={{ fontFamily: "'Kalam', cursive", fontSize: 28, color: "#7A6391" }}>Sara</span>,
+              Qui, insieme a <span style={{ fontFamily: "'Caveat', cursive", fontSize: 28, color: "#7A6391" }}>Sara</span>,
               cerco e colleziono minerali. Realizzo gemme e ciondoli artigianali utilizzando
               pietre locali della Valmalenco.
             </p>
@@ -442,8 +442,8 @@ const ChiSiamo = () => {
 const Stat = ({ n, label }) => (
   <div>
     <div style={{
-      fontFamily: "'Kalam', cursive", fontSize: 56, color: "#7A6391",
-      lineHeight: 1, fontWeight: 700,
+      fontFamily: "'Caveat', cursive", fontSize: 56, color: "#7A6391",
+      lineHeight: 1, fontWeight: 500,
     }}>{n}</div>
     <div style={{
       fontFamily: "'JetBrains Mono', monospace", fontSize: 10,
@@ -488,8 +488,8 @@ const Galleria = () => {
               color: "#7A6391", marginBottom: 16,
             }}>◇ Collezione</div>
             <h2 style={{
-              fontFamily: "'Kalam', cursive", fontSize: "clamp(54px, 6vw, 88px)",
-              color: "#2A1E3D", margin: 0, lineHeight: 0.95, fontWeight: 700,
+              fontFamily: "'Caveat', cursive", fontSize: "clamp(54px, 6vw, 88px)",
+              color: "#2A1E3D", margin: 0, lineHeight: 0.95, fontWeight: 500,
             }}>
               La nostra <span style={{ color: "#7A6391", fontStyle: "italic" }}>galleria</span>
             </h2>
@@ -611,8 +611,8 @@ const MineralCard = ({ m, onClick }) => {
       <div style={{ marginTop: 16, display: "flex", justifyContent: "space-between", alignItems: "baseline" }}>
         <div>
           <div style={{
-            fontFamily: "'Kalam', cursive", fontSize: 28, color: "#2A1E3D",
-            lineHeight: 1, fontWeight: 700,
+            fontFamily: "'Caveat', cursive", fontSize: 28, color: "#2A1E3D",
+            lineHeight: 1, fontWeight: 500,
           }}>{m.nome}</div>
           <div style={{
             fontFamily: "'Cormorant Garamond', serif", fontSize: 14,
@@ -678,8 +678,8 @@ const Lightbox = ({ m, onClose }) => {
           }}>◇ {m.tipo}</div>
 
           <h3 style={{
-            fontFamily: "'Kalam', cursive", fontSize: 64,
-            color: "#2A1E3D", margin: 0, lineHeight: 1, fontWeight: 700,
+            fontFamily: "'Caveat', cursive", fontSize: 64,
+            color: "#2A1E3D", margin: 0, lineHeight: 1, fontWeight: 500,
           }}>{m.nome}</h3>
 
           <p style={{
@@ -740,8 +740,8 @@ const Escursioni = () => {
             color: "#E8B8C4", marginBottom: 16,
           }}>◇ Esperienze sul campo</div>
           <h2 style={{
-            fontFamily: "'Kalam', cursive", fontSize: "clamp(54px, 6vw, 88px)",
-            color: "#F5EFE8", margin: 0, lineHeight: 0.95, fontWeight: 700,
+            fontFamily: "'Caveat', cursive", fontSize: "clamp(54px, 6vw, 88px)",
+            color: "#F5EFE8", margin: 0, lineHeight: 0.95, fontWeight: 500,
           }}>
             Cammina con <span style={{ color: "#E8B8C4", fontStyle: "italic" }}>noi</span>
           </h2>
@@ -777,7 +777,7 @@ const Escursioni = () => {
           </div>
           <a href="#contatti" onClick={(e) => { e.preventDefault(); document.getElementById("contatti").scrollIntoView({ behavior: "smooth" }); }}
             style={{
-              fontFamily: "'Kalam', cursive", fontSize: 28,
+              fontFamily: "'Caveat', cursive", fontSize: 28,
               color: "#E8B8C4", textDecoration: "none",
             }}>
             Scrivici →
@@ -805,8 +805,8 @@ const EscursioneCard = ({ e, num }) => {
         color: "#E8B8C4", letterSpacing: "0.2em", marginBottom: 24,
       }}>— 0{num}</div>
       <h3 style={{
-        fontFamily: "'Kalam', cursive", fontSize: 40,
-        color: "#F5EFE8", margin: 0, lineHeight: 1.05, fontWeight: 700,
+        fontFamily: "'Caveat', cursive", fontSize: 40,
+        color: "#F5EFE8", margin: 0, lineHeight: 1.05, fontWeight: 500,
       }}>{e.titolo}</h3>
 
       <div style={{
@@ -854,8 +854,8 @@ const Artigianato = () => {
               color: "#7A6391", marginBottom: 16,
             }}>◇ Lavorazione artigianale</div>
             <h2 style={{
-              fontFamily: "'Kalam', cursive", fontSize: "clamp(54px, 6vw, 88px)",
-              color: "#2A1E3D", margin: 0, lineHeight: 0.95, fontWeight: 700,
+              fontFamily: "'Caveat', cursive", fontSize: "clamp(54px, 6vw, 88px)",
+              color: "#2A1E3D", margin: 0, lineHeight: 0.95, fontWeight: 500,
             }}>
               Pezzi <span style={{ color: "#7A6391", fontStyle: "italic" }}>unici</span>
             </h2>
@@ -899,8 +899,8 @@ const ArtigianatoCard = ({ a, index }) => {
       </div>
       <div style={{ marginTop: 18 }}>
         <div style={{
-          fontFamily: "'Kalam', cursive", fontSize: 30, color: "#2A1E3D",
-          lineHeight: 1, fontWeight: 700,
+          fontFamily: "'Caveat', cursive", fontSize: 30, color: "#2A1E3D",
+          lineHeight: 1, fontWeight: 500,
         }}>{a.nome}</div>
         <div style={{
           fontFamily: "'Cormorant Garamond', serif", fontSize: 16,
@@ -941,8 +941,8 @@ const Contatti = () => {
               color: "#2A1E3D", marginBottom: 16,
             }}>◇ Restiamo in contatto</div>
             <h2 style={{
-              fontFamily: "'Kalam', cursive", fontSize: "clamp(60px, 7vw, 110px)",
-              color: "#2A1E3D", margin: 0, lineHeight: 0.9, fontWeight: 700,
+              fontFamily: "'Caveat', cursive", fontSize: "clamp(60px, 7vw, 110px)",
+              color: "#2A1E3D", margin: 0, lineHeight: 0.9, fontWeight: 500,
             }}>
               Scrivici due<br/>
               <span style={{ fontStyle: "italic", color: "#7A6391" }}>righe</span>
@@ -1023,7 +1023,7 @@ const Footer = () => (
         flexWrap: "wrap", gap: 20, paddingBottom: 30,
         borderBottom: "1px solid #F5EFE822",
       }}>
-        <div style={{ fontFamily: "'Kalam', cursive", fontSize: 36, color: "#F5EFE8" }}>
+        <div style={{ fontFamily: "'Caveat', cursive", fontSize: 36, color: "#F5EFE8" }}>
           Mine.Real
         </div>
         <div style={{ fontStyle: "italic", color: "#E8B8C4" }}>
