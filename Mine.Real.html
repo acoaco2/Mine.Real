@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mine.Real — Valmalenco</title>
+  <meta name="description" content="Mine.Real — minerali, geologia, escursioni e artigianato in Valmalenco. Per portare un pezzo di montagna sempre con te." />
+  <link rel="icon" type="image/jpeg" href="assets/logo.jpeg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <style>
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      background: #F5EFE8;
+      color: #2A1E3D;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+    ::selection { background: #E8B8C4; color: #2A1E3D; }
+
+    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    @keyframes popIn {
+      from { opacity: 0; transform: scale(0.96); }
+      to { opacity: 1; transform: scale(1); }
+    }
+    @keyframes scrollPulse {
+      0%, 100% { opacity: 0.3; transform: scaleY(1); }
+      50% { opacity: 1; transform: scaleY(1.2); }
+    }
+
+    .nav-burger { display: none; }
+    .nav-mobile { display: none; }
+    .nav-links { display: flex; gap: 28px; align-items: center; }
+    .nav-links a { white-space: nowrap; }
+
+    @media (max-width: 860px) {
+      .nav-links { display: none; }
+      .nav-burger { display: block; }
+      .hero-grid { grid-template-columns: 1fr !important; gap: 60px !important; }
+      .claim-grid { grid-template-columns: 1fr !important; gap: 40px !important; }
+      .about-grid { grid-template-columns: 1fr !important; gap: 50px !important; }
+      .escursioni-grid { grid-template-columns: 1fr !important; }
+      .artigianato-grid { grid-template-columns: repeat(2, 1fr) !important; }
+      .artigianato-header { grid-template-columns: 1fr !important; gap: 30px !important; }
+      .contatti-grid { grid-template-columns: 1fr !important; gap: 50px !important; }
+      .lightbox-grid { grid-template-columns: 1fr !important; }
+    }
+    @media (max-width: 540px) {
+      .artigianato-grid { grid-template-columns: 1fr !important; }
+      section { padding-left: 24px !important; padding-right: 24px !important; }
+      nav { padding-left: 24px !important; padding-right: 24px !important; }
+    }
+  </style>
+
+  <script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="root"></div>
+  <script type="text/babel" src="app.jsx"></script>
+</body>
+</html>
